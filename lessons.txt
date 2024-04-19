@@ -1,6 +1,10 @@
-*ping khazar.org
-*traceroute khazar.org
-
+https://builtwith.com/khazar.org -> istifade edilen toollari gosterir.
+https://web.archive.org/ -> iller erzindeki veziyyetine baxmaq olur.
+https://www.e-taxes.gov.az/ -> VOEN temalarina aid.
+https://hunter.io/ -> email temalarina aid.
+https://who.is/ -> ne vaxt qeydiyyatdan kecibler ves.
+mxtoolbox.com -> domain ip address
+virustotal.com -> viruslara baxir, malware adi.
 ------------------------------------------------------Sebekenin skan olmasi ucun emrler--------------------------------------------------------
 1) ifconfig(linux) - ipconfig(windows)
    arp -a
