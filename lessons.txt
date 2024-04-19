@@ -100,5 +100,27 @@ sizinsayt.az saytını scan edir, istifadə etdiyi wordlist directory-list-2.3-s
 
 3) nmap –spoof-mac 0 [host]
 
+****************************************************************************************************************************************************
+Sual: Əlavədəki faylın (ph.zip) MD5 hash-i nədir? 
+Faylı yükləmək üçün link: xxxxx
+ 
+Cavabi: 
+9bc4d07fd8a2f3ab9faf76d291abb632
+ 
+Həlli:
+wget xxxxxxxx
+md5sum ph.zip
+ 
+------------------------------------------------------------------------
+Sual: Serverdə bu əmrləri icra edin: 
+wget xxxxxx
+mv samplefile.zzz samplefile.zip
+unzip samplefile.zip
+cd sample/
+
+------------------------------------------------------------------------
+Sual: "Statik analiz 01" task-indəki malware-in əsl adı nədir? 
+Cavabi: Worm.Win32.Stuxnet. Həlli:virustotalda axtarın
+
 
 
