@@ -52,7 +52,7 @@ virustotal.com -> viruslara baxir, malware adi.
  ping [ip] 
 
 2) Nmap:
- nmap -p- [ip] 
+ nmap -p [ip] 
  nmap -F [ip] 
 
 3) Nikto:
@@ -96,13 +96,9 @@ sizinsayt.az saytını scan edir, istifadə etdiyi wordlist directory-list-2.3-s
 ------------------------------------------------------MAC Address saxtalasdirmaq(Sniffing) ucun Emrler-----------------------------------------
 **sniffing
 
-1) --spoof-mac [Vendor] yazaraq bunu etmək olar.
-   --spoof-mac 0 (Random)
+1) --spoof-mac Dell yer.az
 
-2) --spoof-mac Dell, 
-   --spoof-mac HP
-
-3) nmap –spoof-mac 0 [host]
+2) nmap –spoof-mac 0 [host]
 
 ****************************************************************************************************************************************************
 Sual: Əlavədəki faylın (ph.zip) MD5 hash-i nədir? 
