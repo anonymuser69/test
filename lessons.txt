@@ -5,6 +5,7 @@
 1) ifconfig(linux) - ipconfig(windows)
    arp -a
    nmap -R khazar.org -> DNS Server ucun
+   pecheck -> entropy value
 
 2) nmap -sn -PR [host] -> ARP Ping (hostun aktivliyini yoxlayir)
 
