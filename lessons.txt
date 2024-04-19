@@ -41,11 +41,9 @@ virustotal.com -> viruslara baxir, malware adi.
 
 9) nmap –sU -v [host] -> UDP Scanning
 
-10) nmap -6 [host] -> IPv6 Scan
+10) nmap –sV [host] -> Servisin versiyasının təyin edilməsi
 
-11) nmap –sV [host] -> Servisin versiyasının təyin edilməsi
-
-12) nmap –O [host] ; Unicornscan [host] -> Banner grabbing
+11) nmap –O [host] ; Unicornscan [host] -> Banner grabbing
 
 ------------------------------------------------------CTF Yarislar ucun Emrler-----------------------------------------------------------------
 1) Ping:
