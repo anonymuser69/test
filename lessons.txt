@@ -1,0 +1,102 @@
+*ping khazar.org
+*traceroute khazar.org
+
+------------------------------------------------------Sebekenin skan olmasi ucun emrler--------------------------------------------------------
+1) ifconfig(linux) - ipconfig(windows)
+   arp -a
+
+2) nmap -sn -PR [host] -> ARP Ping (hostun aktivliyini yoxlayir)
+
+3) nmap -sn -PU [host] -> UDP Ping (hostun aktivliyini yoxlayir)
+
+4) nmap -sn -PE [host] -> ICMP ECHO Ping (standart ping) (burda bezileri islemeye biler, asagidakilari yoxla)
+   nmap -sn -PP [host] -> ICMP Timestamp Ping
+   nmap -sn -PM [host] -> ICMP Address Mask Ping
+
+5) nmap -sn -PS [host] -> TCP SYN Ping – (Boş SYN sorgusu gonderir)
+   nmap -sn -PA [host] -> TCP ACK Ping – (Boş ACK sorgusu gonderir)
+
+6) nmap -sn -PO [host] -> IP Protocol Ping scan
+
+------------------------------------------------------Port Skan etmek ucun Emrler--------------------------------------------------------------
+1) nmap -sT -v [host] -> TCP Connect / Full Open Scan 
+
+2) nmap –sS –v [host] -> TCP Half Open Scan
+
+4) nmap –sX –v [host] -> Inverse TCP Flag scan
+
+5) nmap –sF -v [host] -> Inverse TCP Flag scan (FIN Scan)
+
+6) nmap –sN –v [host] -> Inverse TCP Flag scan (Maimon Scan)
+
+7) nmap –sM –v [host] -> TCP Null Scan
+
+8) nmap –sA -v [host] -> ACK Flag Probe Scan
+
+9) nmap –sU -v [host] -> UDP Scanning
+
+10) nmap -6 [host] -> IPv6 Scan
+
+11) nmap –sV [host] -> Servisin versiyasının təyin edilməsi
+
+12) nmap –O [host] ; Unicornscan [host] -> Banner grabbing
+
+------------------------------------------------------CTF Yarislar ucun Emrler-----------------------------------------------------------------
+1) Ping:
+ ping [ip] 
+
+2) Nmap:
+ nmap -p- [ip] 
+ nmap -F [ip] 
+
+3) Nikto:
+ nikto -h [ip] (bezen -p 80 yaziriq)
+
+4) wpscan --url ip/wordpress/ --enumerate u 
+   wpscan --url ip/wordpress/ --usernames admin --passwords /usr/share/wordlist/rockyou.txt
+
+------------------------------------------------------Qovluq skan etmek ucun Emrler---------------------------------------------------------
+1) gobuster dir 
+
+2) -u: Hansı saytı scan etmək lazımdır. Tam ünvanı olsun (Məs: 
+https://sizinsayt.az)
+ 
+3) -w: wordlisti qeyd edirsiz. HAnsı sözlərlə hücum etsin.
+(məs: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt)
+ 
+4) -b: hansı header kodları ignore etsin. Susmaya görə 404 olur. (məs: -b 404,501)  
+ 
+5) --exclude-length: Hansı ölçülü nəticələri iqnore etsin (məs: --exclude-length 100 bu o deməkdir ki 100 baytlı nəticələri iqnore edəcək)
+ 
+6) -s: hansı header kodlarını qəbul etsin (-s 200)
+ 
+7) --delay: Hər sorğunun arasındakı müddət (--delay 1000 - 1 saniyə fərq edir)
+ 
+8) gobuster dir -u http://sizinsayt.az -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt --exclude-length 107
+sizinsayt.az saytını scan edir, istifadə etdiyi wordlist directory-list-2.3-small.txt -dir və nəticələr arasında 107 baytlıqları ignore edir.
+
+9) WPScan:
+   wpscan --url [saytin linki] --enumerate u 
+   wpscan --url [saytin linki] --enumerate t
+   wpscan --url [saytin linki]  --passwords /usr/share/wordlist/rockyou.txt --usernames phreakazoid 
+
+10) Linux: 
+   ls 
+   ls -ll -h 
+   ls -ll /home/wpadmin/ 
+   cat /home/wpadmin/flag.txt 
+   cat wp-config.php
+
+------------------------------------------------------MAC Address saxtalasdirmaq(Sniffing) ucun Emrler-----------------------------------------
+**sniffing
+
+1) --spoof-mac [Vendor] yazaraq bunu etmək olar.
+   --spoof-mac 0 (Random)
+
+2) --spoof-mac Dell, 
+   --spoof-mac HP
+
+3) nmap –spoof-mac 0 [host]
+
+
+
